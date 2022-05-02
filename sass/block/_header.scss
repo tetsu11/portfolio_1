@@ -1,0 +1,212 @@
+.header {
+  width: 100%;
+  position: relative;
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 56.21vw;
+    min-height: 741.972px;
+    overflow: hidden;
+    z-index: -1;
+    @include tab {
+      
+    }
+    @include sp {
+      min-height: 560px;
+    }
+    & video {
+      width: 100%;
+      min-width: 1320px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      @include tab {
+        width: 150%; 
+      }
+      @include sp {
+        width: 100%;
+        min-width: 1000px;
+        transform: translateX(-65%);
+      }
+    }
+  }
+  &__inner {
+    width: 100%;
+    height: 70px;
+    background:  rgba(255,255,255,.17);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    @include tab {
+      height: 60px;
+    }
+    @include sp {
+      height: 50px;
+    }
+  }
+  &__inner.bgGray {
+    background: rgba(52,58,64, .7);
+    transition: all .6s;     
+  }
+  &__inner.bgGray ul {
+    background: rgba(52,58,64, .7);
+  }
+  &__title {
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-60%) ; 
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+    & a{
+      color: #FFFFFF;
+    }
+  }
+  &__nav{
+    @include tab {
+      margin-top: 60px;
+    }
+    @include sp {
+      margin-top: 50px;
+    }
+    &--list {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      @include tab {
+        display: block;
+        padding-top: 40px;
+        height: 741.969px;  
+        position: absolute;   
+        left: -100vw;  
+        transition: all .4s; 
+        z-index: 50;
+      }
+      @include sp {
+        padding-top: 20px;
+      }
+      & li {
+        padding-left: 50px;
+        @include tab {
+          padding-left: 25px;
+        }
+        & a {
+          line-height: 70px;
+          text-decoration: none;
+          color: #FFFFFF;
+          font-family: $font-nav;
+          font-size: 18px;
+          cursor: pointer;
+          @include tab {
+            line-height: 60px;
+            font-size: 31px;
+          }
+          @include sp {
+            line-height: 40px;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+  &__main-title {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    font-size: 50px;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+  }
+  &__scroll {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    z-index: 50;
+    display: inline-block;    
+    text-decoration: none;
+    @include tab {
+      bottom: 125px;
+    }
+    @include sp {
+      bottom: 100px;
+    }
+    & span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      margin-left: -12px;
+      border-left: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb 2s infinite;
+      animation: sdb 2s infinite;
+      opacity: 1;
+      box-sizing: border-box;
+      @include tab {
+        width: 25px;
+        height: 25px;
+      }
+      @include sp {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    & span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+    & span:nth-of-type(2) {
+      top: 20px;
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s;
+      @include sp {
+        top: 15px;
+      }
+    }
+    & span:nth-of-type(3) {
+      top: 40px;
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s;
+      @include sp {
+        top: 30px;
+      }
+    }
+    @-webkit-keyframes sdb {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes sdb {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+//hambergermenuの処理
+.nav-open .header__nav--list {
+  left: 0;
+  width: 100vw;
+}

@@ -1,0 +1,68 @@
+.about {
+  background-image: url(../img/aboutImg_pc.png);
+  background-size: cover;
+  width: 66.56vw;
+  height: 31.2vw;
+  margin: 0 auto;
+  margin-top: -6.24vw;
+  display: flex;
+  justify-content: flex-start;
+  @include tab {
+    background-image: url(../img/aboutImg_tb.png);
+    width: 86.973vw;
+    height: 76.687vw;
+    margin-top: -15.624vw;
+    display: block;
+  }
+  @include sp {
+    background-image: url(../img/aboutImg_sp.png);
+    width: 89.311vw;
+    height: 149.296vw;
+  }
+  &__title {
+    font-size: 5.72vw;
+    font-family: $font-en;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 5.72vw;
+    padding-left: 4.68vw;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    @include tab {
+      font-size: 9.374vw;
+      padding-top: 13.02vw;
+      padding-left: 6.51vw;
+    }
+    @include sp {
+      font-size: 19.195vw;
+      padding-top: 21.328vw;
+      padding-left: 7.998vw;
+    }
+  }
+  &__text {
+    writing-mode: vertical-rl;
+    color: #ffffff;
+    font-size: 0.988vw;
+    line-height: 1.8;
+    padding-top: 6.24vw;
+    padding-left: 7.503vw;
+    font-family: $font-jp;
+    @include tab {
+      font-size: 1.822vw;
+      padding-top: 7.812vw;
+      padding-left: 6.51vw;
+      line-height: 2;
+    }
+    @include sp {
+      font-size: 3.732vw;
+      line-height: 2.1;
+      padding-top: 10.664vw;
+      letter-spacing: 2px;
+    }
+    &--sp {
+      @include sp {
+        display: none;
+      }
+    }
+  }
+}

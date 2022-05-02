@@ -1,0 +1,40 @@
+.member {
+  height: 54.12vw;
+  background: #E5E6E7;
+  @include tab {
+    height: 95.306vw;
+  }
+  @include sp {
+    height: 184.753vw;
+  }
+  &__inner {
+    width: 63.36vw;
+    height: 41.6vw;
+    background: #E5E6E7;
+    margin: 0 auto;
+    @include tab {
+      width: 99.993vw;
+    }  
+  }
+  &__title {
+    font-size: 5.72vw;
+    font-family: $font-en;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 4.628vw;
+    padding-left: 21.32vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
+    @include tab {
+      font-size: 9.114vw;
+      padding-top: 10.546vw;
+      padding-left: 6.51vw;
+    }
+    @include sp {
+      font-size: 18.662vw;
+      padding-top: 16.529vw;
+      padding-left: 5.332vw;
+    }
+  }
+}
+

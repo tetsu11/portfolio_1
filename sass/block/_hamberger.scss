@@ -1,0 +1,59 @@
+.hamberger {
+  display: none;
+  @include tab {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 200;
+  }
+  @include sp {
+    left: 14px;
+    top: 15px;
+  }
+  &__line {
+    @include tab {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #ffffff;
+      transition: all .6s;
+      border-radius: 10px;
+    }
+    @include sp {
+      width: 25px;
+      height: 2px;
+    }
+    &--1 {
+      @include tab {
+        top: 0;
+      }
+    }
+    &--2 {
+      @include tab {
+        top: 10px;
+      }
+    }
+    &--3 {
+      @include tab {
+        top: 20px;
+      }
+    }
+  }
+}
+
+.nav-open .hamberger__line--1{
+  transform: rotate(45deg);
+  top: 10px;
+}
+.nav-open .hamberger__line--2{
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamberger__line--3{
+  transform: rotate(-45deg);
+  top: 10px;
+}

@@ -1,0 +1,104 @@
+.about {
+  height: 1035px;
+  width: 100%;
+  @include tab {
+    height: 1378px;
+  }
+  @include sp {
+    height: 1200px;
+  }
+  &__wrapper {
+    background: white;
+    width: auto;
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    @include tab {
+      display: block;
+      width: 440px;
+    }
+    @include sp {
+      width: 100vw;
+      max-width: 300px;
+      margin-top: 150px;
+    }
+  }
+  &__image {
+    width: 440px;
+    @include sp {
+      width: 100vw;
+      max-width: 300px;
+    }
+    & img {
+      width: 441px;
+      box-shadow: 12px 12px 8px 1px rgba(0, 0, 0, 0.1) ;
+      @include tab {
+        width: 440px;
+      }
+      @include sp {
+        width: 100vw;
+        max-width: 300px;
+      }
+    }
+  }
+  &__text {
+    width: 441px;
+    height: 307.25px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: $font-text;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    box-shadow: 12px 12px 8px 1px rgba(0, 0, 0, 0.1) ;
+    background-color: #fff;
+    @include tab {
+      margin-top: 30px;
+      width: 400px;
+      height: 347px;
+    }
+    @include sp {
+      width: 100vw;
+      max-width: 260px;
+      height: 280px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.about h2 {
+  text-align: center;
+  font-family: $font-title;
+  // font-style: italic;
+  font-family: $font-subttl;
+  font-size: 61px;
+  color: $color-title;
+  padding-top: 224px;
+  font-weight: 300;
+  @include tab {
+    font-size: 62px;
+    padding-top: 180px;
+  }
+  @include sp {
+    font-size: 50px;
+    padding-top: 100px;
+  }
+}
+
+.about hr {
+  border: 0;
+  border-top: 1px dashed #888888;
+  width: 334px;
+  margin: 0 auto;
+  margin-top: 30px;
+  @include tab {
+    width: 404px;
+  }
+  @include sp {
+    width: 250px;
+    margin-top: 80px;
+  }
+}

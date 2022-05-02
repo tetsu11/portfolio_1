@@ -1,0 +1,124 @@
+.contact {
+  height: 1035px;
+  width: 100%;
+  padding-top: 200px;
+  @include tab {
+    height: 1178px;
+    padding-top: 300px;
+  }
+  @include sp {
+    height: 1100px;
+    padding-top: 250px;
+  }
+  &__wrapper {
+    width: auto;
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    @include tab {
+      display: block;
+      width: 440px;
+    }
+    @include sp {
+      width: 100vw;
+      max-width: 351px;
+      margin-top: 150px;
+    }
+  }
+  &__image {
+    width: 440px;
+    @include sp {
+      width: 100vw;
+      max-width: 351px;
+    }
+    & img {
+      width: 441px;
+      box-shadow: 12px 12px 8px 1px rgba(0, 0, 0, 0.1) ;
+      @include tab {
+        width: 440px;
+      }
+      @include sp {
+        width: 100vw;
+        max-width: 351px;
+      }
+    }
+  }
+  &__box {
+    width: 441px;
+    height: 347px;
+    @include tab {
+      margin-top: 30px;
+    }
+    @include sp {
+      width: 100vw;
+      max-width: 351px;
+      height: 310px;
+    }
+  }
+  &__btn {
+    border: 1px solid black;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    box-shadow: 12px 12px 8px 1px rgba(0, 0, 0, .1) ;
+    font-size: 32px;
+    font-family: $font-title;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    line-height: 80px;
+    margin-top: 220px;
+    margin-left: 100px;
+    
+    @include tab {
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+    @include sp {
+      width: 200px;
+      height: 50px;
+      font-size: 22px;
+      box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .2) ;
+      line-height: 50px;
+      margin-top: 200px;
+    }
+  }
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: $font-subttl;
+  font-style: italic;
+  font-size: 61px;
+  color: $color-title;
+  font-weight: 300;
+  @include tab {
+    font-size: 62px;
+  }
+  @include sp {
+    font-size: 50px;
+  }
+}
+
+.contact hr {
+  border: 0;
+  border-top: 1px dashed #888888;
+  width: 334px;
+  margin: 0 auto;
+  margin-top: 30px;
+  @include tab {
+    width: 404px;
+  }
+  @include sp {
+    width: 250px;
+    margin-top: 80px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-title;
+}

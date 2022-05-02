@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>田辺様web制作実践課題②</title>
+  <link rel="stylesheet" href="sass/reset.css">
+  <link rel="stylesheet" href="sass/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- PC用のtop画像 -->
+    <img alt="暮らしの体験宿いろは" id="first-show" class="header__top-image header__top-image--pc fadein"
+      src="image/top_img_1.png">
+    <img alt="暮らしの体験宿いろは" id="second-show" class="header__top-image header__top-image--pc fadeout"
+      src="image/top_img_2.png">
+
+    <!-- SP用のtop画像-->
+    <img src="image/top_img_1-sp.png" id="first-show-sp" alt="暮らしの体験宿いろは"
+      class="header__top-image header__top-image--sp fadein">
+    <img src="image/top_img_2-sp.png" id="second-show-sp" alt="暮らしの体験宿いろは"
+      class="header__top-image header__top-image--sp fadeout">
+
+
+    <img src="image/logo-title.png" alt="暮らしの体験宿いろは" class="header__logo-image">
+
+    <div class="top-menu">
+      <h1 class="top-menu__title"><a href="">暮らしの体験宿　 <span>いろは</span></a></h1>
+
+      <a href="" class="top-menu__spimg">
+        <img src="image/logo@2x.png" class="top-menu__logo--sp">
+      </a>
+
+      <div class="top-menu__hamberger-icon" id="open">
+        <img src="image/hamberger.png">
+      </div>
+
+      <div class="pc-menu">
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu-list nav__menu-list--about"><a href="">About iroha</a></li>
+            <li class="nav__menu-list nav__menu-list--lodge"><a href="">Lodge</a></li>
+            <li class="nav__menu-list nav__menu-list--food"><a href="">Food Atelier<br> & Lounge</a></li>
+            <li class="nav__menu-list nav__menu-list--interactive"><a href="">Interactive <br>Program</a></li>
+            <li class="nav__menu-list nav__menu-list--booking"><a href="">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="tab-menu">
+        <div class="head">
+          <img src="image/logo@2x.png" class="top-menu__logo--sp-open">
+
+          <div class="tab-menu__close-btn" id="close">
+            <img src="image/close-btn.png">
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu-list nav__menu-list--about"><a href="">About iroha</a></li>
+            <li class="nav__menu-list nav__menu-list--lodge"><a href="">Lodge</a></li>
+            <li class="nav__menu-list nav__menu-list--food"><a href="">Food Atelier<br> & Lounge</a></li>
+            <li class="nav__menu-list nav__menu-list--interactive"><a href="">Interactive <br>Program</a></li>
+            <li class="nav__menu-list nav__menu-list--booking"><a href="">Booking</a></li>
+          </ul>
+        </nav>
+
+        <div class="snsIcon">
+          <img src="image/facebookLogo.png" alt="" class="snsIcon__facebookLogo">
+          <img src="image/instaLogo.png" alt="" class="snsIcon__instaLogo">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="stayIrohaAsLive">
+      <div class="stayIrohaAsLive__block">
+        <h2 class="stayIrohaAsLive__title">「stay iroha as live」</h2>
+        <p class="stayIrohaAsLive__text">
+          テキストテキストテキスト<br>
+          屋久島の地で、、、いろはで、感じて欲しいこと。<br>
+          <br>
+          作っていきたい空間。<br>
+          <span class="sp-none">
+            丸さんたちの想い。<br>
+            暮らしの体験宿、いろは
+
+          </span>
+        </p>
+        <p class="stayIrohaAsLive__text--en">English version About iroha.</p>
+        <p class="stayIrohaAsLive__text--en-sp">Yakushima nature.<br>Onoaidairoha maru</p>
+        <a href=""><button class="btn">Read more</button></a>
+
+      </div>
+      <div class="stayIrohaAsLive__image">
+        <img src="image/stay-iroha-as-live-img-1.png" alt="" class="image__img">
+        <img src="image/stay-iroha-as-live-img-2.png" alt="" class="image__img image__img--2">
+      </div>
+      <div class="stayIrohaAsLive__box"></div>
+
+    </section>
+
+    <section class="content">
+      <h2 class="content__title">Lodge - <span class="content__title--sub">宿泊ロッジ</span> -</h2>
+      <p class="content__title--en">Lodge</p>
+      <div class="content__line"></div>
+      <div class="content__block">
+        <p class="content__text">
+          豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+          海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+          屋久島の暮らしを体験できる宿です｡<br>
+          定員は5名で、ベットは3台､布団を2枚敷くことができます｡<br>
+        </p>
+        <p class="content__text--en">
+          English version About Lodge, stay plan.
+        </p>
+        <a href=""><button class="btn content__btn"><span class="content__btn--tb">Read more</span></button></a>
+      </div>
+      <img src="image/Lodge-Img.png" alt="" class="content__img">
+
+
+      <div class="content__imgList">
+        <img src="image/lodge-Img1.png" alt="" class="content__imgList--item">
+        <img src="image/lodge-Img2.png" alt="" class="content__imgList--item">
+        <img src="image/lodge-Img3.png" alt="" class="content__imgList--item">
+        <img src="image/lodge-Img4.png" alt="" class="content__imgList--item">
+        <img src="image/lodge-Img5.png" alt="" class="content__imgList--item">
+      </div>
+    </section>
+
+    <section class="content content--food">
+      <h2 class="content__title content__title--food">Food Atelier & Lounge</h2>
+      <p class="content__title--en content__title--Food">Food Atelier & Lounge</p>
+      <div class="content__line content__line--food"></div>
+      <div class="content__block content__block--food">
+        <p class="content__text">
+          豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+          海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+          屋久島の暮らしを体験できる宿です｡<br>
+          定員は5名で、ベットは3台､布団を2枚敷くことができます｡<br>
+        </p>
+        <p class="content__text--en">
+          English version About Lodge, stay plan.
+        </p>
+        <a href=""><button class="btn content__btn content__btn--food"><span class="content__btn--tb">Read
+              more</span></button></a>
+      </div>
+      <img src="image/Food-Img.png" alt="" class="content__img content__img--food">
+
+
+      <div class="content__imgList content__imgList--food">
+        <img src="image/Food-Img1.png" alt="" class="content__imgList--item content__imgList--item--food">
+        <img src="image/Food-Img2.png" alt="" class="content__imgList--item content__imgList--item--food">
+        <img src="image/Food-Img3.png" alt="" class="content__imgList--item content__imgList--item--food">
+        <img src="image/Food-Img4.png" alt="" class="content__imgList--item content__imgList--item--food">
+        <img src="image/Food-Img5.png" alt="" class="content__imgList--item content__imgList--item--food">
+      </div>
+    </section>
+
+    <section class="content content--interactive">
+      <h2 class="content__title content__title--interactive">Interactive Program <br class="br-sp">- <span
+          class="content__title--sub content__title--sub-interactive">体験プログラム</span> -</h2>
+      <p class="content__title--en content__title--en-interactive">Interactive</p>
+      <div class="content__line content__line--interactive"></div>
+      <div class="content__block content__block--interactive">
+        <p class="content__text">
+          豊かな暮らしの体験宿 自然の中の貸切ロッジ。<br>
+          海の音､鳥の声､樹々に囲まれて自然のなかでゆったりと､<br>
+          屋久島の暮らしを体験できる宿です｡<br>
+          定員は5名で、ベットは3台､布団を2枚敷くことができます｡<br>
+        </p>
+        <p class="content__text--en">
+          English version About Lodge, stay plan.
+        </p>
+        <a href=""><button class="btn content__btn content__btn--interactive"><span class="content__btn--tb">Read
+              more</span></button></a>
+      </div>
+      <img src="image/interactive-Img.png" alt="" class="content__img content__img--interactive">
+
+
+      <div class="content__imgList content__imgList--interactive">
+        <img src="image/interactive-Img1.png" alt="" class="content__imgList--item content__imgList--item--interactive">
+        <img src="image/interactive-Img2.png" alt="" class="content__imgList--item content__imgList--item--interactive">
+        <img src="image/interactive-Img3.png" alt="" class="content__imgList--item content__imgList--item--interactive">
+        <img src="image/interactive-Img4.png" alt="" class="content__imgList--item content__imgList--item--interactive">
+        <img src="image/interactive-Img5.png" alt="" class="content__imgList--item content__imgList--item--interactive">
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="bottom__text">
+        豊かな暮らしの体験宿<br class="bottom__text--sp"><br class="bottom__text--sp"> 自然の中の貸切ロッジ。<br class="bottom__text--pc">
+        <br>
+        <br>
+        <br>
+        海の音､鳥の声､樹々に囲まれて<br class="bottom__text--sp"><br class="bottom__text--sp">自然のなかでゆったりと､<br class="bottom__text--pc"><br class="bottom__text--sp">
+        <br class="bottom__text--com">
+        屋久島の暮らしを体験できる宿です｡<br class="bottom__text--pc"><br class="bottom__text--sp">
+        <br>
+        <br>
+        <br>
+        豊かな暮らしのひと時を、お過ごしください。<br class="bottom__text--pc">
+        <br class="bottom__text--sp">
+        <br>
+        <br>
+        <br>
+        お待ちしております。
+      </div>
+
+      <div class="contact contact--left">
+        <h3 class="contact__title">Contact - お問い合わせ -</h3>
+        <p class="contact__text">
+          アクセスやお問い合わせはこちらのページから。<br>
+          お気軽にご連絡ください。
+        </p>
+        <p class="contact__text--en">Contact here.</p>
+        <a href="">
+          <button class="contact__btn contact__btn--left">
+            Contact
+          </button>
+        </a>
+      </div>
+
+      <div class="contact contact--right">
+        <h3 class="contact__title">Booking - ご予約 -</h3>
+        <p class="contact__text">
+          アクセスやお問い合わせはこちらのページから。<br>
+          お気軽にご連絡ください。
+        </p>
+        <p class="contact__text--en">Contact here.</p>
+        <a href="">
+          <button class="contact__btn contact__btn--right">
+            Booking
+          </button>
+        </a>
+
+      </div>
+      
+
+      <div class="contact contact--sp">
+        <h3 class="contact__title">Contact</h3>
+        <p class="contact__title--sub"> - お問い合わせ/ご予約 -</p>
+        <p class="contact__text">
+          アクセスやお問い合わせはこちら<br>
+          のページから。<br>
+          お気軽にご連絡ください。
+        </p>
+        <p class="contact__text--en">Contact here.</p>
+        <a href="">
+          <button class="contact__btn contact__btn--Contact">
+            Contact - お問い合わせ -
+          </button>
+          <button class="contact__btn contact__btn--Booking">
+            Booking - ご予約 -
+          </button>
+        </a>
+
+      </div>
+      
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <img src="image/footerLogo.png" alt="" class="footer__logo">
+      
+      <div class="footer__iroha">
+        <h4 class="footer__iroha--title">いろは</h4>
+        <div class="footer__iroha--line"></div>
+        <p class="footer__iroha--text">ここにも、<br>
+          なにかメッセージが入ったり、<br>
+          お問い合わせへのリンクがあったり、<br>
+          ボタンを作ったりすることもできます。</p>
+      </div>
+  
+      <div class="footer__address">
+        <h4 class="footer__address--title">Contact</h4>
+        <div class="footer__address--line"></div>
+        <p class="footer__address--text">〒891-4407 <br>  
+          鹿児島県熊毛郡屋久島町湯泊211-53 <br>
+          TEL: 080-3187-8533 <br>
+          e-mail:  iroha.yakushima108@gmail.com</p>
+      </div>
+  
+      <img src="image/facebookIcon.png" alt="" class="footer__icon footer__icon--facebook">
+      <img src="image/instaIcon.png" alt="" class="footer__icon footer__icon--insta">
+
+    </div>    
+  </footer>
+
+  <div class="copy">
+    <p class="copy__text--pc">Copyright©︎暮らしの体験宿　いろは</p>
+    <p class="copy__text--sp">Copyright ©︎ 2019  Lodge&Food Atelier  iroha. <br>
+      All Rights Reserved.</p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

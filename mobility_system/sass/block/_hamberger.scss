@@ -1,0 +1,66 @@
+.hamberger {
+  display: none;
+  @include sp {
+    display: block;
+    position: absolute;
+    right: 6.666vw;
+    top: 6.666vw;
+    width: 7.999vw;
+    height: 7.999vw; 
+    cursor: pointer;
+    z-index: 300;
+  }
+  &__line {
+    @include sp {
+      position: absolute;
+      width: 6.666vw;
+      height: 2px;
+      background-color: #111;
+      transition: all .6s;
+    }
+    &--1 {
+      @include sp {
+        top: 0;
+      }
+    }
+    &--2 {
+      @include sp {
+        top: 2.399vw;
+      }
+    }
+    &--3 {
+      @include sp {
+        top: 4.799vw;
+        width: 3.999vw;
+      }
+    }
+  }
+}
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+.nav-open .hamberger__line--1 {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.nav-open .hamberger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamberger__line--3 {
+  transform: rotate(-45deg);
+  top: 10px;
+  width: 6.666vw;
+}

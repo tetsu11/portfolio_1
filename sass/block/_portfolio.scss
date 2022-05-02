@@ -1,0 +1,139 @@
+.portfolio {
+  &__wrapper {
+    // background-image: url(../img/portfolio-bkimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 758px;
+    margin-top: 100px;
+    overflow: hidden;
+    padding-top: 30px;
+    background-color: #fff;
+    @include sp {
+      margin-top: 10px;
+    }
+  }
+  &__slider {
+    width: 1200px;
+    margin: 0 auto;
+    @include tab {
+      width: 800px;
+    }
+    @include sp {
+      width: auto;
+    }
+  }
+  &__content {
+    margin: 0 30px;
+    
+  }
+  
+  &__img {
+    width: 470px;
+    box-shadow: 12px 12px 4px 1px rgba(0, 0, 0, 0.1) ;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    @include sp {
+      width: 300px;
+    }
+  }
+  &__img:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.3s;
+    opacity: 0.6;
+  }
+  &__item {
+    width: 470px;
+    // box-shadow: 12px 12px 2px 10px rgba(114, 182, 228, 0.1) ;
+  }
+  &__text {
+    width: 470px;
+    height: 280px;
+    background: #faf9f9;
+    // box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.1) ;
+    @include sp {
+      width: 300px;
+    }
+    & div {
+      color: black;
+      font-size: 30px;
+      font-family: $font-nav;
+      padding-top: 30px;
+      margin-left: 40px;
+      @include sp {
+        font-size: 16px;
+      }
+    }
+  }
+  &__view {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    margin-left: 250px;
+    margin-top: 50px;
+    cursor: pointer;
+    &:hover{
+      transform: translateX(15px);
+      transition-duration: 0.6s;
+    }
+    @include sp {
+      margin-left: 100px;
+    }
+  }
+  &__btn {
+    color: $color-title;
+    font-size: 35px;
+    width: 100px;
+  }
+  &__yajirusi {
+    width: 70px;
+    height: 17px;
+    margin-top: 37px;
+    margin-left: 10px;
+    
+    @include sp {
+      width: 40px;
+      height: 10px;
+      margin-left: 0;
+    }
+  }
+}
+.portfolio h2 {
+  text-align: center;
+  font-family: $font-subttl;
+  font-style: italic;
+  font-size: 61px;
+  color: $color-title;
+  padding-top: 0px;
+  font-weight: 300;
+  @include tab {
+    font-size: 62px;
+    padding-top: 180px;
+  }
+  @include sp {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+}
+
+.portfolio hr {
+  border: 0;
+  border-top: 1px dashed #888888;
+  width: 334px;
+  margin: 0 auto;
+  margin-top: 30px;
+  @include tab {
+    width: 404px;
+  }
+  @include sp {
+    width: 250px;
+    margin-top: 80px;
+  }
+}
+
+.img-box {
+  width: 470px;
+  height: 386px;
+  overflow: hidden;
+  background: #000;
+}

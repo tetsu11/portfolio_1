@@ -1,0 +1,179 @@
+.header {
+  background-image: url(../img/mainVisual_pc.png);
+  background-size: cover;
+  width: auto;
+  height: 62.5vw;
+  @include tab {
+    background-image: url(../img/mainVisual_tb.png);
+    height: 156.25vw;
+  }
+  @include sp {
+    background-image: url(../img/mainVisual_sp.png);
+    height: 266.666vw;
+  }
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__title {
+    font-size: 2.5vw;
+    font-family: $font-en;
+    font-weight: bold;
+    padding-top: 2.028vw;
+    margin-left: 5.208vw;
+    cursor: pointer;
+    white-space: nowrap;
+    @include tab {
+      font-size: 4.16vw;
+      padding-top: 5.99vw;
+      margin-left: 6.51vw;
+    }
+    @include sp {
+      font-size: 8.533vw;
+      margin-left: 16.79vw;
+      padding-top: 5.333vw;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19.48vw;
+    @include tab {
+      margin-left: 8.463vw;
+    }
+    @include sp {
+      display: block;
+      position: fixed;
+      right: -100vw;
+      margin-left: 0;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      margin-top: 14.666vw;
+      background-color: #E5E6E7;
+      z-index: 3;
+      transition: all .6s;
+      z-index: 200;
+      overflow-y: auto; 
+      
+    }
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      @include sp {
+        display: block;
+        margin-top: 18.399vw;
+      }
+      & li {
+        padding-top: 2.808vw;
+        padding-right: 2.34vw;
+        font-size: 1.25vw;
+        font-weight: normal;
+        font-family: $font-en;
+        @include tab {
+          font-size: 2.343vw;
+          padding-top: 6.51vw;
+          padding-right: 2.213vw;
+        }
+        @include sp {
+          font-size: 9.599vw;
+          font-weight: normal;
+          padding-top: 0;
+          padding-bottom: 10.666vw;
+        }
+        & a {
+          text-decoration: none;
+          color: #000000;
+          cursor: pointer;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        
+      }
+    }
+  }
+  &__sns {
+    margin-left: 25.624vw;
+    @include tab {
+      margin-left: 7.812vw;
+    }
+    @include sp {
+      margin-left: 36.78vw;
+      margin-top: 69px;
+    }
+    &--icon {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin-top: 2.288vw;
+      @include tab {
+        margin-top: 4.948vw;
+        margin-right: 6.51vw;
+      }
+    }
+    &--facebook {
+      width: 2.6vw;
+      margin-right: 1.04vw;
+      @include tab {
+        width: 5.208vw;
+        margin-right: 1.562vw;
+      }
+      @include sp {
+        margin-right: 5.333vw;
+        width: 10.666vw;
+      }
+    }
+    &--twitter {
+      width: 2.6vw;
+      @include tab {
+        width: 5.208vw;
+      }
+      @include sp {
+        width: 10.666vw;
+      }
+    }
+  }
+  &__text {
+    font-size: 4.948vw;
+    font-weight:  bold;
+    font-family: $font-jp;
+    white-space: nowrap;
+    width: 683px;
+    height: 254px;
+    position: absolute;
+    top: 21.25vw;
+    left: 21.35vw;
+    line-height: 1.33;
+    letter-spacing: 0;
+    @include tab {
+      width: auto;
+      font-size: 7.705vw;
+      line-height: 1.5;
+      top: 45.182vw;
+      left: 7.552vw;
+    }
+  }
+  &__scroll {
+    width: 4.42vw;
+    position: absolute;
+    top: 48.37vw;
+    left: 47.5vw;
+    @include tab {
+      width: 11.067vw;
+      top: 113.633vw;
+      left: 44.53vw;
+    }
+    @include sp {
+      width: 54px;
+      top: 182.32vw;
+      left: 42.666vw;
+    }
+  }
+
+}
+
+//ハンバーガメニューの処理
+.nav-open .header__nav {
+  right: 0;
+}

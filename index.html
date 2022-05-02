@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/style.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+  <link rel="stylesheet"  href="css/slick.css"/>
+  <link rel="stylesheet"  href="css/slick-theme.css"/>
+
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__video">
+      <video loop autoplay muted poster="img/video_img.png">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos. 
+      </video>
+    </div>
+    <div class="header__inner">
+      <div class="header__title">
+        <a href=""><p>Tetsu   Portfolio</p></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="#portfolio">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamberger" id="js-hamberger">
+      <span class="hamberger__line hamberger__line--1"></span>
+      <span class="hamberger__line hamberger__line--2"></span>
+      <span class="hamberger__line hamberger__line--3"></span>
+    </div>
+
+    <diz class="header__main-title">
+      <p>- Tetsu   Portfolio -</p>
+    </diz>
+    <div class="header__scroll">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </header>
+  <main>
+    <section class="about" id="about">
+
+      <div class="jsAnimation jsAnimation--down">
+        <h2>About</h2>
+        <hr>
+      </div>
+
+      <div class="about__wrapper">
+        <div class="about__image jsAnimation jsAnimation--right">
+          <img src="img/about-image.png" alt="">
+        </div>
+        <div class="about__text jsAnimation jsAnimation--left">
+          ご覧いただき、ありがとうございます。 <br>
+          副業フリーランサーとして活動しております、tetsuと申します。<br>
+          福岡県出身、現在は東京都内で活動しています。<br>
+          WEBサイト制作のコーディング業務に対応しております。<br>
+          WEB制作を通して、みなさまの魅力をお伝えするお手伝いができればと思っております。<br>
+          誠心誠意、ご対応致します。末永くお付き合いができれば幸いです。
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+
+      <div class="jsAnimation jsAnimation--down">
+        <h2>Service</h2>
+        <hr>
+      </div>
+
+      <div class="service__wrapper">
+        <div class="service__image jsAnimation jsAnimation--left">
+          <img src="img/service-image.png" alt="">
+        </div>
+        <div class="service__text jsAnimation jsAnimation--right">
+          お預かりしたデザインデータを基に、デザインの意図を理解した上で忠実にコーディングいたします。 <br>
+          SEOを意識した適切なコーディングを実施しています。<br>
+          Sassを用いたCSS設計によりメンテナンス性に優れたコーディングで納品いたします。
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      
+      <div class='jsAnimation jsAnimation--down'>
+        <h2 class="portfolio__title">Works</h2>
+        <hr>
+      </div>
+
+      <div class="portfolio__wrapper">
+        <div class="portfolio__slider slider">
+          
+          <div class="portfolio__content portfolio__content--mobilitySystem">
+            <div class="portfolio__item">
+              <div class="img-box">
+                <img src="img/mobilitysystem.png" alt="" class="portfolio__img ">
+              </div>
+              <div class="portfolio__text">
+                <div>-  模写コーディング</div>
+                <div>-  HTML / SCSS / BEM / <br> JavaScript</div>
+
+                <a class="portfolio__view" href="mobility_system/index.html">
+                  <div class="portfolio__btn">View</div>
+                  <img src="img/yajirusi.png" alt="" class="portfolio__yajirusi">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content portfolio__content--iroha">
+            <div class="portfolio__item">
+              <div class="img-box">
+                <img src="img/iroha.png" alt="" class="portfolio__img">
+              </div>
+              <div class="portfolio__text">
+                <div>-  模写コーディング</div>
+                <div>-  HTML / SCSS / BEM / <br> JavaScript</div>
+
+                <a class="portfolio__view" href="iroha/index.html">
+                  <div class="portfolio__btn">View</div>
+                  <img src="img/yajirusi.png" alt="" class="portfolio__yajirusi">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content portfolio__content--144lab">
+            <div class="portfolio__item">
+              <div class="img-box">
+                <img src="img/144lab.png" alt="" class="portfolio__img">
+              </div>
+              <div class="portfolio__text">
+                <div>-  模写コーディング</div>
+                <div>-  HTML / SCSS / BEM / <br> JavaScript</div>
+
+                <a class="portfolio__view" href="144lab/index.html">
+                  <div class="portfolio__btn">View</div>
+                  <img src="img/yajirusi.png" alt="" class="portfolio__yajirusi">
+                </a>
+              </div>
+            </div>          
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+      <div class="jsAnimation jsAnimation--down">
+        <h2>Contact</h2>
+        <hr>
+      </div>
+      <div class="contact__wrapper">
+        <div class="service__image jsAnimation jsAnimation--right">
+          <img src="img/contact-image.png" alt="">
+        </div>
+        <div class="contact__box jsAnimation jsAnimation--left">
+          <a href=""><div class="contact__btn">Contact</div></a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="contactForm" id="contact">
+      <div class='jsAnimation jsAnimation--down'>
+        <h2>Contact</h2>
+        <hr>
+      </div>
+
+      <div class="contactForm__wrapper">
+        <div class="contactForm__ttl">お名前(企業名)</div>
+        <input action="" class="contactForm__form" placeholder="山田　太郎"></input>
+        <div class="contactForm__ttl" type="tel">電話番号</div>
+        <input type="tel" action="" class="contactForm__form" placeholder="090-1234-5678"></input>
+        <div class="contactForm__ttl" >メールアドレス</div>
+        <input type="email" action="" class="contactForm__form" placeholder="taro-yamada@gmail.com"></input>
+        <div class="contactForm__ttl">コメント</div>
+        <textarea action="" class="contactForm__coment"></textarea>
+      </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+      <div class="footer__copyright">©copyright -tetsu ,<br class="br"> 2021 All Rights Reserved.</div>
+
+    </footter>
+
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

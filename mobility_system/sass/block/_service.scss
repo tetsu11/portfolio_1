@@ -1,0 +1,130 @@
+.service {
+  width: 66.56vw;
+  height: 45.032vw;
+  margin: 0 auto;
+  margin-top: 6.344vw;
+  @include tab {
+    width: 86.973vw;
+    height: 74.734vw;
+    margin-top: 11.71vw;
+  }
+  &__title {
+    font-size: 5.72vw;
+    font-family: $font-en;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    display: inline-block;
+    padding-top: 0;
+    padding-left: 4.68vw;
+    @include tab {
+      padding-left: 0;
+      font-size: 9.37vw;
+    }
+    @include sp {
+      font-size: 19.1952vw;
+    }
+  }
+  &__conteiner {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+      display: block;
+    }
+    @include sp {
+      margin-top: 13.33vw;
+    }
+  }
+  &__content {
+    width: 27.04vw;
+    height: 33.8vw;
+    background: #f7f7f7;
+    margin-top: 3.64vw;
+    @include tab {
+      width: 41.403vw;
+      height: 58.788vw;
+    }
+    @include sp {
+      width: 89.311vw;
+      height: 117.304vw;
+      margin-top: 0;
+      margin-bottom: 5.332vw;
+    }
+    &--1 {
+      margin-left: 4.68vw;
+      @include tab {
+        margin-left: 0;
+      }
+    }
+    &--2 {
+      margin-right: 4.68vw;
+      @include tab {
+        margin-right: 0;
+      }
+    }
+    &--title {
+      font-size: 1.56vw;
+      font-family: $font-jp;
+      padding-top: 3.068vw;
+      padding-left: 3.536vw;
+      @include tab {
+        font-size: 2.473vw;
+        padding-left: 5.0778vw;
+      }
+      @include sp {
+        font-size: 4.79vw;
+      }
+    }
+    &--text {
+      font-size: 0.833vw;
+      font-weight: normal;
+      font-family: $font-jp;
+      line-height: 2.3;
+      padding-top: 1.456vw;
+      padding-left: 3.536vw;
+      padding-right: 3vw;
+      word-wrap: break-word;
+      @include tab {
+        font-size: 1.8228vw;
+        line-height: 1.85;
+        padding-left: 5.0778vw;
+        padding-right: 5.859vw;
+      }
+      @include sp {
+        font-size: 2.932vw;
+        line-height: 2;
+        padding-top: 5.065vw;
+      }
+    }
+  }
+  &__img {
+    margin-top: 3.848vw;
+    margin-left: 9.36vw;
+    @include tab {
+      margin-top: 5.859vw;
+      margin-left: 14.23vw;
+    }
+    @include sp {
+      margin-top: 11.997vw;
+      margin-left: 31.992vw;
+    }
+    &--1 {
+      width: 8.32vw;
+      @include tab {
+        width: 12.65vw;
+      }
+      @include sp {
+        width: 25.902vw;
+      }
+    }
+    &--2 {
+      width: 10.048vw;
+      @include tab {
+        width: 15.277vw;
+      }
+      @include sp {
+        width: 32.957vw;
+      }
+    }
+  }
+}

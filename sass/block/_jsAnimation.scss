@@ -1,0 +1,19 @@
+.jsAnimation {
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: opacity, transform;
+  &--down {
+    transform: translate(0, -100px);
+  }
+  &--left {
+    transform: translate(-100px, 0);
+  }
+  &--right {
+    transform: translate(100px, 0);
+  }
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}

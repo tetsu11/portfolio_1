@@ -1,0 +1,9 @@
+.contents {
+  height: 85.184vw;
+  @include tab {
+    height: 164.364vw;
+  }
+  @include sp {
+    height: 438.426vw;
+  }
+}

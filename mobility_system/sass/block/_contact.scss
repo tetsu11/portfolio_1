@@ -1,0 +1,54 @@
+.contact {
+  width: 98.84vw;
+  height: 54.548vw;
+  background-image: url(../img/contact-Img_pc.png);
+  background-size: cover;
+  position: relative;
+  @include tab {
+    background-image: url(../img/contact-Img_tb.png);
+    width: 99.993vw;
+    height: 130.72vw;
+  }
+  @include sp {
+    background-image: url(../img/contact-Img_sp.png);
+    width: 99.975vw;
+    height: 245.005vw;
+  }
+  &__box {
+    font-size: 5.72vw;
+    font-family: $font-en;
+    font-weight:bold;
+    width: 67.6vw;
+    height: 21.84vw;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 6.136vw;
+    left: 16.64vw;
+    padding-top: 6.084vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
+    & p {
+      padding-left: 4.68vw;
+      @include tab {
+        padding-left: 6.51vw;
+      }
+      @include sp {
+        padding-left: 5.332vw;
+      }
+    }
+    @include tab {
+      width: 99.993vw;
+      height: 54.684vw;
+      top: 0;
+      left: 0;
+      font-size: 9.374vw;
+      padding-top: 10.285vw;
+    }
+    @include sp {
+      font-size: 19.195vw;
+      padding-top: 20.261vw;
+      width: 99.975vw;
+      height: 79.98vw;
+    }
+  }
+}

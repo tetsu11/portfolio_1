@@ -1,0 +1,67 @@
+.contactForm {
+  height: 88vw;
+  &__wrapper {
+    width: 62.27vw;
+    height: 57vw;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+  }
+  &__ttl {
+    color: black;
+    font-size: 1.0vw;
+    margin-left: 50px;
+    padding-top: 3vw;
+  }
+  &__form {
+    background-color: white;
+    width: 51vw;
+    height: 2.59vw;
+    margin-top: 1.0vw;
+    margin-left: 50px;
+    border-radius: 8px;
+    border: 1px solid #1b2538;
+  }
+  &__coment {
+    width: 51vw;
+    height: 15.83vw;
+    margin-top: 1.50vw;
+    margin-left: 50px;
+    border-radius: 8px;
+    border: 1px solid #1b2538;
+  }
+}
+
+.contactForm h2 {
+  text-align: center;
+  font-family: $font-subttl;
+  font-style: italic;
+  font-size: 61px;
+  color: $color-title;
+  padding-top: 200px;
+  font-weight: 300;
+  @include tab {
+    font-size: 62px;
+    padding-top: 180px;
+  }
+  @include sp {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+}
+
+.contactForm hr {
+  border: 0;
+  border-top: 1px dashed #888888;
+  width: 334px;
+  margin: 0 auto;
+  margin-top: 30px;
+  @include tab {
+    width: 404px;
+  }
+  @include sp {
+    width: 250px;
+    margin-top: 80px;
+  }
+}
